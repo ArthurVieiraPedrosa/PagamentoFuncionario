@@ -1,26 +1,18 @@
 using System;
+
 namespace PagamentoFuncionairo;
 public class Funcionario
 {
-    private string _nome;
+    public string Nome { get; set; }
     public int Horas { get; private set; }
-    public int ValorPorHora { get; private set; }
+    public double ValorPorHora { get; private set; }
     public Funcionario(){}
-    public Funcionario(string nome, int horas, int valorPorHora){
-        _nome = nome;
+    public Funcionario(string nome, int horas, double valorPorHora){
+        Nome = nome;
         Horas = horas;
         ValorPorHora = valorPorHora;
     }
-    public string Nome
-    {
-        get { return _nome; }
-        set 
-        {
-            if (value != null && value.Length > 1){
-                _nome = value;
-            }
-        }
-    }
+
     public void setNome(string nome){
         Nome = nome;
     }
