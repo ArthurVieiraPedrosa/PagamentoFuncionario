@@ -6,7 +6,7 @@ namespace PagamentoFuncionairo.Entites
     {
         public double CobrancaAdicional { get; private set; }
         public FuncionarioTercerizado() { }
-        public FuncionarioTercerizado(string nome, int horas, int valorPorHora, double cobrancaAdicional) : base(nome, horas, valorPorHora)
+        public FuncionarioTercerizado(string nome, int horas, double valorPorHora, double cobrancaAdicional) : base(nome, horas, valorPorHora)
         {
             CobrancaAdicional = cobrancaAdicional;
         }
